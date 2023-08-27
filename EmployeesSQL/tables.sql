@@ -61,7 +61,7 @@ create table salaries(
 copy salaries from 'C:\Users\kylem\Desktop\Bootcamp_Assignments\Challenges\Challenge_9\sql-challenge\Starter_Code\data\salaries.csv'
 delimiter ',' csv header;
 
-select * from salaries
+select * from salaries;
 
 --Create Table Titles
 drop table titles;
@@ -75,7 +75,10 @@ delimiter ',' csv header;
 
 select * from titles;
 
---Create Table named company, combining other tables
-drop table company;
-create table company
 
+select * from departments;
+select * from dept_emp;
+select * from dept_manager;
+select * from employees;
+select * from salaries;
+select * from titles;
