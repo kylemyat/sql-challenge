@@ -3,7 +3,8 @@ select
 	e.emp_no, 
 	e.last_name, 
 	e.first_name, 
-	e.sex, salaries.salary
+	e.sex, 
+	salaries.salary
 from employees as e
 	join salaries on e.emp_no = salaries.emp_no;
 
@@ -26,7 +27,8 @@ select
 	e.first_name
 from dept_manager as dm
 	join departments as d on dm.dept_no = d.dept_no
-		join employees as e on dm.emp_no = e.emp_no;
+		join employees as e on dm.emp_no = e.emp_no
+			where emp_title = 'm0001';
 
 
 --List the department number for each employee along with that employee’s employee number, last name, first name, and department name
